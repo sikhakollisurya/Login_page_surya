@@ -114,5 +114,7 @@ function validateForm() {
         return false;
     }
 
+    alert("Form submitted successfully!");
+    
     return true; // Allow form submission
 }
