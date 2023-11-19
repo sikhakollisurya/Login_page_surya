@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #box {
+            width: 200px;
+            position: relative;
+        }
+
+        #box2 {
+            border-radius: 12px;
+            height: 500px;
+            width: 610px;
+            position: relative;
+            background: #ffffff;
+        }
+
+        #box3 {
+            width: 290px;
+            position: relative;
+            background: #ffffff;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya login page</title>
+
+    <script src="conditions.js"></script>
+
+</head>
+
+<body style="background-color: #bfbebd;">
+
+    <center>
+        <div id="box2">
+
+            <b>
+                <label style="font-size: xx-large;">Job Application</label>
+                <label style="font-size: medium;">(Web)</label>
+            </b>
+            <form onsubmit="return validateForm()">
+                <table>
+                    <tr>
+                        <td>
+                            <div id="box3">
+                                <p>First Name</p>
+                                <input id="firstname" style="width: 270px;" type="text" placeholder="Enter First Name...">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="box3">
+                                <p>Last Name</p>
+                                <input id="lastname" style="width: 270px;" type="text" placeholder="Enter Last Name...">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="box3">
+                                <p>Email</p>
+                                <input id="email" style="width: 270px;" type="text" placeholder="Enter Email Address...">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="box3">
+                                <p>Job Role</p>
+                                <select id="jobRole" style="width: 270px;" name="job">
+                                    <option>Select your Job Role...</option>
+                                    <option>SDE</option>
+                                    <option>Intern</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <div style="width: 575px;">
+                                <p>Address</p>
+                                <textarea id="Address" style="width: 575px;height: 50px;"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <div id="box3">
+                                <p>City</p>
+                                <input id="city" style="width: 270px;" type="text" placeholder="Enter City Name...">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="box3">
+                                <p>PinCode </p>
+                                <input id="pinCode" style="width: 270px;" type="number" placeholder="Enter Pincode...">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="box3">
+                                <p>Date</p>
+                                <input id="date" style="width: 270px;" type="date">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="box3">
+                                <p>Upload your CV</p>
+                                <div id="cv" style="width: 270px; border: 1px solid rgb(0, 0, 0)">
+                                    <input type="file">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <button type="submit" style="height: 30px; border: #ffffff; color: white; background-color: red; border-radius: 5px;">
+                                Submit
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
